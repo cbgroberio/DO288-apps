@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: famousapp-famouschart
 spec:
-  replicas: 1
+  replicas: 2
   template:
     spec:
       containers:
         - name: famouschart
           resources: 
             limits:
-              memory: "128Mi"
-              cpu: "250m"
+              memory: "256Mi"
+              cpu: "500m"
