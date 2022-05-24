@@ -21,15 +21,15 @@ public class HelloResource {
     Optional<String> message;
 
     @GET
-    @Path("/hello")
+    @Path("/helloworld")
     public String hello() {
         String response = "";
 
       	if (!message.isPresent()) {
-      	  response = "Hello world from host " + hostname + "\n";
+      	  response = "Hello World from host " + hostname + "\n";
       	} else {
-      	  response = "Hello world from host [" + hostname + "].\n";
-      	  response += "Message received = " + message.get() + "\n";
+      	  response = "Hello World from host [" + hostname + "].\n";
+      	  response += "Message --> " + message.get() + "\n";
         }
         return response;
     }

@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: configmap-hello
 data:
-  APP_MSG: CBG was here!
+  APP_MSG: CBG31
